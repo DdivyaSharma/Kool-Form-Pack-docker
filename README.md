@@ -21,8 +21,7 @@ Run the Docker Container
 docker run -p 80:80 --name my-apache-container my-apache-server
 ```
 
-
-## Replace my-apache-server and my-apache-container with your  image and container names.
+> Replace my-apache-server and my-apache-container with your  image and container names.
 
 
 ### Access the Web Server
