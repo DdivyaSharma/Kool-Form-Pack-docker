@@ -24,8 +24,8 @@ WORKDIR /var/www/html
 # Volume for Apache logs
 VOLUME /var/log/apache2
 
-# Adding custom content here (nano.tar.gz contains necessary files)
+# Adding custom content here (nano_content contains necessary files)
 ADD nano_content /var/www/html/
 
-# Alternatively, you can use COPY for local files and then unzip it there
+# Alternatively, you can use COPY for zip files and then unzip it in the required directory
 # COPY nano_content /var/www/html/
