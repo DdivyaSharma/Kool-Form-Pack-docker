@@ -1,5 +1,5 @@
 #Latest Ubuntu base image
-FROM ubuntu:latest
+FROM ubuntu/apache2:2.4-22.04_beta
 
 LABEL "Creator"="Divya"
 
@@ -7,13 +7,13 @@ LABEL "Creator"="Divya"
 ENV DEBIAN_FRONTEND=noninteractive
 
 
-RUN apt-get update && apt-get upgrade -y
+#RUN apt-get update && apt-get upgrade -y
 
 # Install Apache2
-RUN apt-get install -y apache2
+#RUN apt-get install -y apache2
 
 #Default command to run Apache in the foreground
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+#CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
 # Expose port 80 for Web Traffic
 EXPOSE 80
